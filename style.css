@@ -1,0 +1,132 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* ____________________________________________ */
+
+:root {
+  --bright-org: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --vrydark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --vrylight-gray: hsl(0, 0%, 95%);
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* _____________________________________ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--vrylight-gray);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 130px auto;
+}
+
+.card {
+  max-width: 300px;
+  height: 500px;
+  padding: 42px;
+}
+
+.sedan {
+  background-color: var(--bright-org);
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--vrydark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.card h1 {
+  text-transform: uppercase;
+  color: var(--vrylight-gray);
+  font-family: "Big Shoulders Display", cursive;
+  margin: 2rem 0 2rem 0;
+  letter-spacing: 1px;
+}
+
+.card p {
+  color: var(--Transparent-white);
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+button {
+  width: 146px;
+  padding: 1rem;
+  border-radius: 32px;
+  border: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.sedan button {
+  color: var(--bright-org);
+}
+
+.suvs button {
+  color: var(--dark-cyan);
+}
+
+.luxury button {
+  color: var(--vrydark-cyan);
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--vrylight-gray);
+  border: 2px solid var(--vrylight-gray);
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    margin: 100px auto;
+  }
+
+  .card {
+    height: 450px;
+    border-radius: 0;
+  }
+
+  .card h1 {
+    margin: 1.2rem 0 1.2rem 0;
+  }
+
+  .sedan {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
